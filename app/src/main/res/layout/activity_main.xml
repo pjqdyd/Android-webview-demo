@@ -12,39 +12,43 @@
        android:orientation="vertical"
        tools:ignore="MissingConstraints">
       <EditText
-          android:id="@+id/editText"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:background="#eaeaea"
-          android:drawableLeft="@drawable/user"
-          android:gravity="center"
-          android:hint="请输出用户名"
-          android:inputType="text"
-          android:text="张三"
-          android:layout_margin="5dp"
-          android:padding="2dp"
-          android:textColor="#666666"
-          android:textSize="20dp" />
-
-      <EditText
-          android:id="@+id/editPassword"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:background="#eaeaea"
-          android:drawableLeft="@drawable/password"
-          android:gravity="center"
-          android:hint="请输出密码"
-          android:inputType="textPassword"
-          android:layout_margin="5dp"
-          android:padding="2dp"
-          android:textColor="#666666"
-          android:textSize="20dp" />
-      <Button
-          android:id="@+id/btn"
-          android:layout_gravity="center"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="确定" />
+          android:text="请选择你的爱好:"/>
+
+      <!-- 吃 -->
+      <CheckBox
+          android:id="@+id/cbEat"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="40dp"
+          android:text="吃" />
+
+      <!-- 睡觉 -->
+      <CheckBox
+          android:id="@+id/cbSleep"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="40dp"
+          android:text="睡觉" />
+
+      <!-- 敲代码 -->
+      <CheckBox
+          android:id="@+id/cbCoding"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="40dp"
+          android:text="敲代码" />
+
+      <!-- 显示爱好 -->
+      <Button
+          android:id="@+id/btnShow"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_centerHorizontal="true"
+          android:text="确定"
+          android:onClick="submit" />
    </LinearLayout>
 
 
