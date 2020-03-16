@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity  implements OnCheckedChangeL
             likeMap.forEach((key, value) -> likeStr.append(" ").append(value));
             Toast.makeText(MainActivity.this, "你的爱好: " + likeStr, Toast.LENGTH_SHORT).show();
         }
-
     }
 
 }
