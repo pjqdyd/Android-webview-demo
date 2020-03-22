@@ -11,44 +11,27 @@
        android:layout_height="wrap_content"
        android:orientation="vertical"
        tools:ignore="MissingConstraints">
-      <EditText
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="请选择你的爱好:"/>
+      <ImageView
+          android:id="@+id/image_view"
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:background="@android:color/black"
+          android:src="@drawable/img1" />
 
-      <!-- 吃 -->
-      <CheckBox
-          android:id="@+id/cbEat"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginLeft="40dp"
-          android:text="吃" />
-
-      <!-- 睡觉 -->
-      <CheckBox
-          android:id="@+id/cbSleep"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginLeft="40dp"
-          android:text="睡觉" />
-
-      <!-- 敲代码 -->
-      <CheckBox
-          android:id="@+id/cbCoding"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginLeft="40dp"
-          android:text="敲代码" />
-
-      <!-- 显示爱好 -->
       <Button
-          android:id="@+id/btnShow"
+          android:id="@+id/btn_previous"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_gravity="center"
           android:layout_centerHorizontal="true"
-          android:text="确定"
-          android:onClick="submit" />
+          android:text="上一张" />
+      <Button
+          android:id="@+id/btn_next"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_centerHorizontal="true"
+          android:text="下一张" />
    </LinearLayout>
 
 
