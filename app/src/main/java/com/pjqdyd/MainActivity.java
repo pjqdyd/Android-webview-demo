@@ -1,6 +1,8 @@
 package com.pjqdyd;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -25,10 +27,18 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(imageList.get(imageIndex));
 
         });
+
         Button btnNext = findViewById(R.id.btn_next); //下一张
         btnNext.setOnClickListener(view -> {
             imageIndex = imageIndex+1 > 2 ? 0 : imageIndex+1;
             imageView.setImageResource(imageList.get(imageIndex));
+        });
+
+        Button btnWebView = findViewById(R.id.btn_web_view); //WebView
+        btnWebView.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 }
