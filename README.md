@@ -13,3 +13,12 @@
 > Android SDK (API29)
 
 > Android Studio 3.5.2
+
+##### 修改WebView的Url:
+
+```
+// WebViewActivity.java  lines:32
+
+webView.loadUrl("http://www.baidu.com");
+
+```
